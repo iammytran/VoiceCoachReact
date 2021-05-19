@@ -16,14 +16,16 @@ npm install
 yarn install
 ```
 
+#### Run NodeJS Server (in a separate terminal window):
+
+```
+node server.js
+```
+
 #### Run ReactJS Client:
 
 ```
 yarn start
 ```
 
-#### Run NodeJS Server (in a separate terminal window):
 
-```
-node server.js
-```
