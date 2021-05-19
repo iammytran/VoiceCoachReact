@@ -26,5 +26,5 @@ node server.js
 ```
 yarn start
 ```
-
+#### Remember to TURN ON you microphone
 
