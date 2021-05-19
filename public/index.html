@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#000000" />
+    <title>Realtime AI Voice Coach</title>
+    <meta
+      name="description"
+      content="Analyze users' speaking rate in real time"
+    />
+
+    <base href="/" />
+
+    <!--new added delete later for testing-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <!--
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    -->
+
+    <script src="js/audio.interop.js"></script>
+    <link href="css/about.css" rel="stylesheet" />
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <link href="VoiceCoach.styles.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+
+    <script src="js/wave2.js"></script>
+    <script src="js/mute.js"></script>
+    <script src="js/visualizer.js"></script>
+    <script src="js/wave.js"></script>
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script src="js/helper-functions.js"></script>
+    <script>navigator.serviceWorker.register('service-worker.js');</script>
+  </body>
+</html>
