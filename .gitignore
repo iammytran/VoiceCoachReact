@@ -22,3 +22,20 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 node_modules
+
+# deepspeech models
+deepspeech-0.9.3-models.pbmm
+deepspeech-0.9.3-models.scorer
+
+# 
+package-lock.json
+yarn.lock
+
+# .vs file
+.suo
+ProjectSettings.json
+slnx.sqlite
+VSWorkspaceState.json
+
+
+
