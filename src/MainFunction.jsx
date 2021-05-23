@@ -61,7 +61,6 @@ class MainFunction extends Component {
                     <input type="submit" value="Back to Home"></input>
                 </form>
 
-
                 <br></br><br></br><br></br><br></br>
                 <button disabled={!this.state.connected || this.state.recording} onClick={this.startRecording}>
                     Start Recording
@@ -73,10 +72,12 @@ class MainFunction extends Component {
 
                 {this.renderTime()}
             </div>
-            {this.renderRecognitionOutput()}
-            {this.renderOutputLength()}
-            {this.duration()}
-            {this.rateOfSpeech()}
+            <div class="divPrint">
+                {this.renderRecognitionOutput()}
+                {this.renderOutputLength()}
+                {this.duration()}
+                {this.rateOfSpeech()}
+            </div>
             <p>===========================</p>
 
             <br></br>
