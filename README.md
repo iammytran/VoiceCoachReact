@@ -27,16 +27,37 @@ yarn install
 ```
 ---
 ## Run the Website
-### 1. Open TWO Terminal(Mac) / Command Prompt(Windows) windows
-### 2. On one of the terminal / command prompt, run ReactJS Client to start the website:
+### 1. Open 
+##### You need to open TWO Terminal(Mac) / Command Prompt(Windows) windows
+
+### 2. Go to the directory of the VoiceCoachReact file
+The following is the example if your VoiceCoachReact file on you local machine is in Downloads
+```
+cd Downloads/VoiceCoachReact
+```
+
+### 3. Run ReactJS Client website
+On one of the terminal / command prompt, run ReactJS Client to start the website:
 ```
 yarn start
 ```
-### 3. On another terminal / command prompt, Run NodeJS Server to activate the server to interact with the client website:
+
+### 4. Run NodeJS Server
+On another terminal / command prompt, Run NodeJS Server to activate the server to interact with the client website:
 
 ```
 node server.js
 ```
 
-### 4. Remember to TURN ON you microphone
+### 5. Remember to TURN ON you microphone
+
+---
+## Overview of the VoiceCoachReact file
+* server: server.js in VoiceCoachReact
+* The UI(User Interface) with html, css, JavaScript in VoiceCoachReact/src
+* .pbmm and .scorer are the DeepSpeech pre-trained model
+---
+## Additional / Further Infomation
+* [Train your own model with DeepSpeech](https://deepspeech.readthedocs.io/en/v0.9.3/TRAINING.html)
+* [DeepSpeech Documentation](https://deepspeech.readthedocs.io/en/v0.9.3/?badge=latest)
 
