@@ -11,6 +11,7 @@ const SERVER_PORT = '4000'; // websocket server port
 
 let words = 0;
 let durationMin = 0.0;
+let lastRate = 0.0;
 
 // const VAD_MODE = VAD.Mode.NORMAL;
 // const VAD_MODE = VAD.Mode.LOW_BITRATE;
@@ -183,10 +184,23 @@ function finishStream() {
 			console.log('Duration: ', recordDur, 'sec'); //speaking to the end
 			console.log('Duration: ', (recordDur / 60), 'min');
 			console.log('numWords: ', text.split(' ').length);
-			
-			rate = words / durationMin;
 
-			text = text + "@" + recordDur.toString() + "@" + rate.toString();
+			dash = "";
+			rate = words / durationMin;
+			for(i = 0; i < rate; i++)
+			{
+				dash += "-";
+			}
+
+			differenceRate = parseInt(rate - lastRate);
+			differentRateString = "";
+			differentRateString = differenceRate.toString()
+			if(differenceRate > 0.0) {
+				differentRateString = "+" + differenceRate.toString();
+			}
+			
+			lastRate = rate;
+			text = text + "@" + recordDur.toString() + "@" + rate.toString() + "@" + dash + "@" + differentRateString;
 			console.log('New Text: ', text);
 
 			

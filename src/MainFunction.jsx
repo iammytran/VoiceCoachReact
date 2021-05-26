@@ -73,12 +73,10 @@ class MainFunction extends Component {
                 {this.renderTime()}
             </div>
             <div class="divPrint">
-                {this.renderRecognitionOutput()}
-                {this.renderOutputLength()}
-                {this.duration()}
-                {this.rateOfSpeech()}
+                {this.wpmGraph()}
             </div>
-            <p>===========================</p>
+            <p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+            <p>wpm represents number of words per minute</p>
 
             <br></br>
         </div>);
@@ -103,11 +101,19 @@ class MainFunction extends Component {
     rateOfSpeech() {
         return (<ul>
             {this.state.recognitionOutput.map((r) => {
-                return (<p key={r.id}>Rate: {parseInt(r.text.split('@')[2])}</p>);//(<li key={r.id}>{r.text}</li>);
+                return (<p key={r.id}>{parseInt(r.text.split('@')[2])} wpm</p>);//(<li key={r.id}>{r.text}</li>);
             })}
         </ul>)
     }
 
+    // new new added function**
+    wpmGraph() {
+        return (<ul>
+            {this.state.recognitionOutput.map((r) => {
+                return (<p key={r.id}>{r.text.split('@')[3]} {parseInt(r.text.split('@')[2])} wpm ({r.text.split('@')[4]} wpm)</p>);//(<li key={r.id}>{r.text}</li>);
+            })}
+        </ul>)
+    }
 
     //added function**
     duration()
