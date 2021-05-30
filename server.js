@@ -201,6 +201,18 @@ function finishStream() {
 			
 			lastRate = rate;
 			text = text + "@" + recordDur.toString() + "@" + rate.toString() + "@" + dash + "@" + differentRateString;
+			
+			if (rate < 120 ) {
+				text += "@" + "You should talk faster";
+			}
+			else if(rate > 150)
+			{
+				text += "@" + "You should talk slower";
+			}
+			else
+			{
+				text += "@" + "";
+			}
 			console.log('New Text: ', text);
 
 			
