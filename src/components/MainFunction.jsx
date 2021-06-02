@@ -26,6 +26,8 @@ class MainFunction extends Component {
     }
 
     componentDidMount() {
+
+
         let recognitionCount = 0;
 
         this.socket = io.connect('http://localhost:4000', {});
@@ -108,7 +110,7 @@ class MainFunction extends Component {
     wpmGraph() {
         return (<ul>
             {this.state.recognitionOutput.map((r) => {
-                return (<p key={r.id}>{r.text.split('@')[3]} {parseInt(r.text.split('@')[2])} wpm ({r.text.split('@')[4]} wpm)</p>);//(<li key={r.id}>{r.text}</li>);
+                return (<p key={r.id}>{r.text.split('@')[3]} {parseInt(r.text.split('@')[2])} wpm ({r.text.split('@')[4]} wpm) **{r.text.split('@')[5]} </p>);//(<li key={r.id}>{r.text}</li>);
             })}
         </ul>)
     }
