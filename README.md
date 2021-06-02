@@ -2,6 +2,7 @@
 Realtime AI Voice Coach is the ReactJS web application that can stream microphone audio from the browser
 to a NodeJS server and transmit the DeepSpeech results back to the browser.  
 ## Video Tutorial
+#### [For Mac users or developers, here is a new version tutorial](https://youtu.be/xflTDyY77Xw)
 #### [For Mac users or developers, here is the tutorial](https://youtu.be/3v-AcyKFpV4)  
 #### For Windows users or developers, here is the tutorial
 
