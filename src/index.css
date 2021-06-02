@@ -12,3 +12,24 @@ code {
     monospace;
 }
 
+
+.card {
+  flex-direction: row;
+  height: 300px;
+}
+.card img {
+  width: 243px;
+  height: 300px;
+}
+
+.card-horizontal {
+  display: flex;
+  flex: 1 1 auto;
+  height: 4000px;
+}
+
+img {
+  object-fit:scale-down; 
+  width:200px;
+  height:310px;
+}
