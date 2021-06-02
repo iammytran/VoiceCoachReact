@@ -21,12 +21,23 @@ Download the correct version of [node.js](https://nodejs.org/en/download/)
 
 ### 4. Install npm and yarn
 ##### Search Terminal(Mac) / Command Prompt(Windows), copy the following prompt line by line and hit enter to install
+##### Install npm
 
 ```
 npm install
 ```
+
+##### Install yarn. Depends on your environment, you might need to try the following arguments until it can successfully download
 ```
-yarn install
+npm install -g yarn
+```
+
+```
+sudo npm install -g yarn
+```
+
+```
+npm install --global yarn
 ```
 ---
 ## Run the Website
