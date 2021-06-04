@@ -192,9 +192,12 @@ function finishStream() {
 				dash += "-";
 			}
 
+			let differenceRate = 0;
 			differenceRate = parseInt(rate - lastRate);
 			differentRateString = "";
-			differentRateString = differenceRate.toString()
+			differentRateString = differenceRate.toString();
+			console.log("Difference: ", differenceRate);
+			console.log("DifferenceStr: ", differentRateString);
 			if(differenceRate > 0.0) {
 				differentRateString = "+" + differenceRate.toString();
 			}
